@@ -261,6 +261,49 @@ class SignInButton extends StatelessWidget {
           padding: padding,
           shape: shape,
         );
+      case Buttons.Naver:
+        return SignInButtonBuilder(
+          elevation: elevation,
+          key: const ValueKey('Naver'),
+          mini: mini,
+          text: text ?? 'Sign in with Naver',
+          textColor: const Color(0xFFFFFFFF),
+          image: const ClipRRect(
+            child: Image(
+              image: AssetImage(
+                'assets/logos/naver.png',
+                package: 'flutter_signin_button',
+              ),
+              height: 24.0,
+            ),
+          ),
+          onPressed: onPressed,
+          padding: padding,
+          backgroundColor: const Color(0xFF03C75A),
+          shape: shape,
+        );
+      case Buttons.Kakao:
+        return SignInButtonBuilder(
+          elevation: elevation,
+          key: const ValueKey('Kakao'),
+          mini: mini,
+          text: text ?? 'Sign in with Kakao',
+          textColor: const Color(0xFF000000).withOpacity(0.85),
+          image: const ClipRRect(
+            child: Image(
+              image: AssetImage(
+                'assets/logos/kakao.png',
+                package: 'flutter_signin_button',
+              ),
+              height: 24.0,
+            ),
+          ),
+          onPressed: onPressed,
+          padding: padding,
+          backgroundColor: const Color(0xFFFEE500),
+          shape: shape,
+        );
+
       case Buttons.Email:
       default:
         return SignInButtonBuilder(

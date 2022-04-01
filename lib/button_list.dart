@@ -18,4 +18,6 @@ enum Buttons {
   Hotmail,
   Xbox,
   Microsoft,
+  Naver,
+  Kakao,
 }
