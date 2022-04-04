@@ -282,6 +282,7 @@ class SignInButton extends StatelessWidget {
           backgroundColor: const Color(0xFF03C75A),
           shape: shape,
         );
+
       case Buttons.Kakao:
         return SignInButtonBuilder(
           elevation: elevation,
